@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    
+    .calculator .btn {
+      font-size: 1.3rem;
+      transition: all 0.15s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container calculator bg-white rounded-4 shadow p-0" style="max-width: 360px;">
+    <div class="display bg-dark text-white text-end p-3">
+      <div class="previous-operand text-secondary fs-5"></div>
+      <div class="current-operand fs-1 fw-medium">0</div>
+    </div>
+    
+    <div class="row g-0">
+      <div class="col-3 p-1">
+        <button class="btn btn-light w-100 py-4 text-danger" data-action="clear">AC</button>
+      </div>
+      <div class="col-3 p-1">
+        <button class="btn btn-light w-100 py-4" data-action="delete">DEL</button>
+      </div>
+      <div class="col-3 p-1">
+        <button class="btn btn-light w-100 py-4 text-primary" data-action="divide">÷</button>
+      </div>
+      <div class="col-3 p-1">
+        <button class="btn btn-light w-100 py-4 text-primary" data-action="multiply">×</button>
+      </div>
+      
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">7</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">8</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">9</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4 text-primary" data-action="subtract">-</button></div>
+      
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">4</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">5</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">6</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4 text-primary" data-action="add">+</button></div>
+      
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">1</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">2</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="number">3</button></div>
+      <div class="col-3 p-1"><button class="btn btn-primary w-100 py-4" data-action="equals">=</button></div>
+      
+      <div class="col-6 p-1"><button class="btn btn-light w-100 py-4" data-action="number">0</button></div>
+      <div class="col-3 p-1"><button class="btn btn-light w-100 py-4" data-action="decimal">.</button></div>
+    </div>
+  </div>
+
+  <script src="calculator.js">
+    
+  </script>
+</body>
+</html>

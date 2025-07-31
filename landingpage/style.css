@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #4f46e5;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #6366f1;
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-button {
+  background-color: white;
+  color: #4f46e5;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background-color: #e0e7ff;
+}
+
+/* Features */
+.features-section {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.feature-heading {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #4338ca;
+  color: white;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: #4338ca;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e0e7ff;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.footer-link {
+  color: #aaa;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
